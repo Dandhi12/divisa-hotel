@@ -1,0 +1,294 @@
+
+.bk-main-bwh {
+    width: 60%;
+    align-content: center;
+    
+}
+.chek-in {
+    width: 200px;
+    height: 40px;
+}
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking {
+	font-family: 'Hind', sans-serif;
+	background-image: url('..s/img/background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: #F8F1E9;
+}
+
+.booking-form {
+	max-width: 586px;
+	width: 100%;
+	margin: auto;
+}
+
+.booking-form .form-header {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.booking-form .form-header h1 {
+	font-size: 42px;
+	color: #000;
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.booking-form>form {
+	background-color: #ffffff;
+	padding: 40px;
+	-webkit-box-shadow: 0px 5px 15px -5px rgba(19, 7, 7, 0.842);
+	box-shadow: 0px 5px 15px -5px rgba(15, 5, 5, 0.8);
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+	background-color: gainsboro;
+	height: 50px;
+	padding: 0px 20px;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0px;
+	color: rgb(3, 2, 2);
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(212, 206, 206, 0.548);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(31, 22, 22, 0.548);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(31, 22, 22, 0.548);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(31, 22, 22, 0.548);
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: grey;
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	color: #c99552;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	display: inline-block;
+	letter-spacing: 0.4px;
+}
+
+.booking-form .submit-btn-1 {
+	color: #000;
+	background-color: burlywood;
+	font-weight: 400;
+	height: 50px;
+	border: none;
+	width: 450px;
+	display: block;
+	text-decoration: none;
+	text-decoration-line: none;
+	letter-spacing: 0.4px;
+}
+
+.contact-form .btnSbmt {
+    width: 160%;
+    height: 40px;
+    border: none;
+    /* border-radius: 1rem; */
+    padding: 1.5%;
+    background: orangered;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    
+    margin-top: 48%;
+}
+.contact-form .btnSbmt_1 {
+    width: 150%;
+    height: 40px;
+    border: none;
+    /* border-radius: 1rem; */
+    padding: 1.5%;
+    background: orangered;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    
+    margin-top: 45%;
+}
+
+
+.bg {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+
+}
+
+
+.bgd {
+  
+  padding-top: 30px;
+  width: 100%;
+  height: 675px;
+  text-align: center;
+  color: #ffffff; 
+
+  
+
+   
+}
+.text {
+  margin-top: 100px;
+  color: #ffffff;
+  font-size: 100px;
+}
+
+
+
+/* gues */
+
+
+
+body{
+    background: -webkit-linear-gradient(left, #F8F1E9, #F8F1E9);
+  
+}
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+
+.contact-form form{
+    padding: 14%;
+}
+
+
+
+.contact-form .form-control{
+    border-radius:1rem;
+}
+
+
+
+
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    /* margin-bottom: 8%; */
+    /* margin-top: -10%; */
+    /* text-align: center; */
+    color: #000;
+}
+.contact-form .btnContact {
+    width: 100%;
+    height: 50px;
+    border: none;
+    /* border-radius: 1rem; */
+    padding: 1.5%;
+    background: orangered;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 8%;
+}
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    /* border-radius: 1rem; */
+    padding: 1.5%;
+    background: orangered;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 8%;
+
+}
+
+
+/* print */
+@media print {
+	body * {
+	  visibility: hidden;
+	}
+	#section-to-print, #section-to-print * {
+	  visibility: visible;
+	  color: white;
+	  font-size: 5rem;
+	}
+	#section-to-print {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  
+	}
+  }
+  
+  #section-to-print {
+	color: pink;
+	background: #AAAAAA;
+  }

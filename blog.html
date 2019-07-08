@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="bl.css">
+	<script src="kelompok/angular.min.js"></script>
+    <script src="fungtion.js"></script>
+    <!-- <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
+    <!-- <script src="./bootstrap-4.3.1-dist/js/aos.js"></script> -->
+    <!-- <script src="/bootstrap-4.3.1-dist/js/popper.min.js"></script> -->
+    
+     <script src="./bootstrap-4.3.1-dist/js/jquery-3.2.1.min.js"></script> 
+
+</head>
+<body ng-app>
+
+		<div class="bg"> 
+            
+                <header ng-include="'header_1.html'">
+                  
+                </header>
+        
+        
+                
+            </div>
+        <section class="bgd" style="background-image: url('img/hero_2.jpg');height: 100%;width: 100%;background-size: cover">
+          <div class="text">
+              <h1>Welcome</h1>
+              <p> To Blog</p>
+            </div>
+        </section>
+
+		<div class="i-main-text">
+				<h1 style="text-align: center; margin-top: 20px"> Our Blog</h1>
+				<hr style="width: 5%;">  
+			 </div>
+		<div class="mainan">
+
+		
+	<div class="blog">
+		<div class="blo">
+			<a target="blogs" href="./sank/blog/green.jpg">
+			<img src="./sank/blog/green.jpg" alt="greenhost">
+			</a>
+			<div class="date"><div class="tanggal"><h2>25</h2></div>
+							<div class="mar">Mar</div></div>
+				<div class="capt"><h2><br>Five Reason to choice Divisa Hotel</h2>
+							This is to answer why you to choice Divisa hotel for you stay overnight in Yogyakarta city</div>
+		</div>
+
+		
+
+			<div class="post">
+				<div class="posting"> Popular Post	
+			<br>
+			<hr>
+			
+			
+				</div>
+		<div class="breakfast">
+			<div class="break">
+				<a target="spe" href="./sank/blog/img_1.jpg">
+				<img src="./sank/blog/img_1.jpg" alt="breakfast"></a>
+			</div>
+				<div class="special"> <h5>Special breakfast menu Divisa...</h5>	
+					<div class="time">March 20,2019</div>
+			
+					</div>
+				</div>
+			<div class="breakfast">
+				<div class="break">
+					<a target="spe" href="./sank/blog/slider-6.jpg">
+					<img src="./sank/blog/slider-6.jpg" alt="breakfast"></a>
+				</div>
+				<div class="special"> <h5>Dinner menu from Divisa hotel...</h5>	
+					<div class="time">January 12,2019</div>
+			
+					</div>
+				</div>
+
+		<div class="breakfast">
+		<div class="break">
+		<a target="spe" href="./sank/blog/hotel-1447197_1920.jpg">
+			<img src="./sank/blog/hotel-1447197_1920.jpg" alt="breakfast"></a>
+		</div>
+		<div class="special"> <h5>Presidential room the best to...</h5>	
+			<div class="time">February 17,2019</div>
+			
+		</div>
+		</div>
+
+
+	</div>
+	</div>
+	
+	
+
+	<div class="blog">
+		<div class="blo">
+			<a target="blogs" href="./sank/blog/crew-7cPNnx13Qpo-unsplash.jpg">
+			<img src="./sank/blog/crew-7cPNnx13Qpo-unsplash.jpg" alt="greenhost">
+			</a>
+			<div class="date"><div class="tanggal"><h2>17</h2></div>
+							<div class="mar">Mar</div></div>
+				<div class="capt"><h2><br>Workspace For You</h2>
+							Divisa hotel provide workspace for Divisa hotel customer,and this is free for public </div>
+		</div>
+
+		
+
+			<div class="post">
+				<div class="posting"> Popular Post	
+			<br>
+			<hr>
+			
+			
+				</div>
+		<div class="breakfast">
+			<div class="break">
+				<a target="spe" href="./sank/blog/ali-yahya-7_AZi5Fe-rU-unsplash.jpg">
+				<img src="./sank/blog/ali-yahya-7_AZi5Fe-rU-unsplash.jpg" alt="breakfast"></a>
+			</div>
+				<div class="special"> <h5>Coffeshop in Divisa hotel...</h5>	
+					<div class="time">January 20,2019</div>
+			
+					</div>
+				</div>
+			<div class="breakfast">
+				<div class="break">
+					<a target="spe" href="./sank/blog/nik-lanus-YMOHw3F1Hdk-unsplash.jpg">
+					<img src="./sank/blog/nik-lanus-YMOHw3F1Hdk-unsplash.jpg" alt="breakfast"></a>
+				</div>
+				<div class="special"> <h5>Divisa hotel the best hotel in...</h5>	
+					<div class="time">January 13,2019</div>
+			
+					</div>
+				</div>
+
+		<div class="breakfast">
+			<div class="break">
+				<a target="spe" href="./sank/blog/crew-7cPNnx13Qpo-unsplash.jpg">
+				<img src="./sank/blog/crew-7cPNnx13Qpo-unsplash.jpg" alt="breakfast">
+				</a>
+			</div>
+			<div class="special"> <h5>Ping pong table special for...</h5>	
+				<div class="time">February 7,2019</div>
+			
+				</div>
+			</div>
+
+
+	</div>
+	</div>
+
+	</div>
+	<!-- <footer class="ftr" ng-include="'footer.html'"></footer>  -->
+    <script>
+        
+			$(document).ready(function() {
+		
+		  $(window).scroll(function() {
+		
+			var height = $('.first-container').height();
+			var scrollTop = $(window).scrollTop();
+		
+			if (scrollTop >= height + 200) {
+			  $('.nav-container').addClass('solid-nav');
+			} else {
+			  $('.nav-container').removeClass('solid-nav');
+			}
+		
+		  });
+		});
+			
+			</script>
+    
+
+</body>
+</html>

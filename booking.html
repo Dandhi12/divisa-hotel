@@ -1,0 +1,322 @@
+<!DOCTYPE html ng-app>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>booking</title>
+	<link rel='stylesheet' type='text/css' media='screen' href='booking.css'>
+    <link type="text/css" rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <script src="kelompok/angular.min.js"></script>
+	<script src="fungtion.js"></script>
+	<script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	 <script src="./bootstrap-4.3.1-dist/js/jquery-3.2.1.min.js"></script> 
+	 <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+    
+</head>
+<body ng-app>
+
+       
+<div class="bg">
+
+
+		<header ng-include="'header_1.html'">
+                  
+			</header>
+</div>
+		</div>
+        <section class="bgd" style="background-image: url('img/hero_2.jpg');height: 100%;width: 100%;background-size: cover">
+          <div class="text">
+              <h1>Welcome</h1>
+              <p> BOOKING</p>
+            </div>
+        </section>
+
+    <div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1 id="bookk">Buat Pesanan anda</h1>
+						</div>
+						<form method="GET">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label"><b> Check In</b></span>
+										<input class="form-control" ng-model="Cin" type="date" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label"><b>Check out</b></span>
+										<input class="form-control" ng-model="Cout" type="date" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label"><b>Rooms</b></span>
+										<select class="form-control" ng-model="Rooms">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label"><b>Adults</b></span>
+										<select class="form-control" ng-model="Adult">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label"><b>Children</b></span>
+										<select class="form-control" ng-model="Children">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+									<div class="g-recaptcha bgo" data-sitekey="6LeViasUAAAAAI6ml8PcsGYVUxrFNGI3kdDG6TN2"></div>
+								<a href="#gues"><button class="submit-btn-1"><b>NEXT</b></button></a> 
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- gues information -->
+<div class="container contact-form">
+                
+	<form name="myForm" method="GET" action="recapt.php">
+		<h3 style="text-align: center" id="gues">Gues Information</h3>
+		<br>
+		<br>
+	   <div class="row">
+			<div class="col-md-6">
+					
+				<div class="form-group">
+						<h3>Your Name</h3>
+					<input type="text" id="name" name="txtName" class="form-control" placeholder="Your Name *" value=""required="required"ng-model="Iname" />
+					
+				</div>
+				
+				<div class="form-group">
+						<h3>Your Number ID (NIK)    </h3>
+					<input type="text" id="num" name="txtID" class="form-control" placeholder="Your ID(NIK) *" value="" required="required"ng-model="Inumber"/>
+					
+				</div>
+				
+				<div class="form-group">
+					<h3>Phone Number</h3>
+					<input type="text" id="pone" name="txtPhone" class="form-control" placeholder="+62877 xxxx xxxx" value="" required="required"ng-model="Ipone" />
+					
+				</div>
+
+				
+				<div class="form-group">
+						<h3>Your Number Email</h3>
+					<input type="email" id="nue" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required="required"ng-model="Iemail" />
+				</div>
+				
+			</div>
+			
+			<div class="col-md-6">
+					<h4>Sepecial Request</h4>
+				<div class="form-group">
+					<textarea name="txtMsg" class="form-controls" placeholder="Your Request *" style="width: 100%; height: 150px;" ng-model="req"></textarea>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<div class="col-md-4">
+				<div class="form-group">
+		<a href="#finishing"> <input  type="submit" id="sbmt" name="btnSubmit" class="btnContact" value="NEXT" /> </a>
+					</div>
+		</div>
+
+	</form>
+	
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- check out -->
+<div class="container contact-form">
+	<div class="printhis">
+	<form name="myForms" method="GET" action="booking_1.html">
+			<h3 id="finishing" style="text-align: center">Check Out</h3>
+			<br>
+			<br>
+		   
+				<div class="col-md-8">
+						
+					
+						<div class="form-group">
+							<div class="row" style="margin-bottom: 1%">
+							<h5 style="margin-right: 132px"> Name</h5>
+							<h5>: {{Iname}}</h5>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row" style="margin-bottom: 1%">
+									<h5 style="margin-right: 88px"> Number ID</h5>
+									<h5>: {{Inumber}}</h5>
+										
+							</div>                    
+						</div>
+						<div class="form-group">
+								<div class="row" style="margin-bottom: 1%">
+									<h5 style="margin-right: 50px">Phone Number</h5>
+									<h5>: {{Ipone}}</h5>
+								</div>
+						</div>
+						<div class="form-group">
+								<div class="row" style="margin-bottom: 1%">
+									<h5 style="margin-right: 59px"> Number Email </h5>
+									<h5>: {{Iemail}}</h5> 
+								</div>               
+						</div>
+						<div class="form-group">
+								<div class="row" style="margin-bottom: 1%">
+								<h5 style="margin-right: 30px">Sepecial Request</h5>
+								<h5>: {{req}}</h5>
+								</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="row" style="margin-bottom: 1%">
+							<h5 style="margin-right: 104px">Check IN</h5>
+							<h5>: {{Cin}}</h5>
+							</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row" style="margin-bottom: 1%">
+						<h5 style="margin-right: 90px">Check Out</h5>
+						<h5>: {{Cout}}</h5>
+						</div>
+				</div>
+
+
+				<div class="form-group">
+					<div class="row" style="margin-bottom: 1%">
+					<h5 style="margin-right: 120px">Rooms</h5>
+					<h5>: {{Rooms}}</h5>
+					</div>
+			</div>
+
+			<div class="form-group">
+				<div class="row" style="margin-bottom: 1%">
+				<h5 style="margin-right: 138px">Adult</h5>
+				<h5>: {{Adult}}</h5>
+				</div>
+		</div>
+
+		<div class="form-group">
+			<div class="row" style="margin-bottom: 1%">
+			<h5 style="margin-right: 110px">Children</h5>
+			<h5>: {{Children}}</h5>
+			</div>
+		</div>
+		
+		<div class="form-group">
+				<div class="row" style="margin-bottom: 1%">
+				<h5 style="margin-right: 140px">Price</h5>
+				<h5>: $1000</h5>
+				</div>
+		</div>
+
+
+
+				
+			
+			<br>
+			<br>
+
+			
+					
+			<div class="form-group">
+					<div class="row" style="margin-bottom: 1%">
+			<a href="booking_1.html"><input id="submitt" type="submit" name="btnSubmit" class="btnSbmt" value="SUBMIT" /></a>
+			<a href="#bookk">	<input id="submitt" type="submit" name="btnSubmit" class="btnSbmt_1" value="CANCEL" /></a>
+					</div>
+			</div>
+				</div>
+
+		</form>
+	</div>
+	</div>
+
+
+	
+
+
+
+	<footer ng-include="'footer.html'"></footer> 
+    <script>
+        
+			$(document).ready(function() {
+		
+		  $(window).scroll(function() {
+		
+			var height = $('.first-container').height();
+			var scrollTop = $(window).scrollTop();
+		
+			if (scrollTop >= height + 200) {
+			  $('.nav-container').addClass('solid-nav');
+			} else {
+			  $('.nav-container').removeClass('solid-nav');
+			}
+		
+		  });
+		});
+			
+			</script>
+
+<script>
+		// fungtion messege eror
+	$("#submitt").click(function()
+	{	
+					  
+						  confirm("Apakah anda yakin?" );
+					  
+				  });
+	</script>
+
+
+	
+	
+
+
+
+
+	
+</body>
+</html>

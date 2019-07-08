@@ -1,0 +1,205 @@
+	<!DOCTYPE html>
+<html>
+<head>
+
+		<link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+		
+	<title>Contact</title>
+	<script src="kelompok/angular.min.js"></script>
+	<script src="fungtion.js"></script>
+	<script src="./bootstrap-4.3.1-dist/js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="header_1.css">
+
+</head>
+<body >
+
+	
+		<div class="bg"> 
+                <header>
+
+						<div class="first-container">
+							<div class="nav-container">
+							  <div class="nav-row">
+							  <div class="nav-logo">
+								<a href="#">
+								  DIVISA HOTEL
+								</a>
+							  </div>
+							  <div class="nav-controls">
+					
+								<a href="index.html">Home</a>
+								<div class="dropdown">
+											  <button class="dropbtn">profile</button>
+											  <div class="dropdown-content">
+											  <a href="about.html">about</a>
+											  <a href="galery.html">galery</a>
+											  <a href="service.html">service</a>
+											  <a href="team.html">team</a>
+											  </div>
+											</div>  
+						  <a href="booking.html">Booking</a>
+						  <a href="room.html">Room</a>
+								<a href="contact.html">contact</a>
+								<a href="blog.html">blog</a>
+							  </div>
+							  </div>
+							</div>
+							</div>   
+				  
+					 </header>
+			</div>
+			<section class="bgd" style="background-image: url('img/hero_2.jpg');height: 100%;width: 100%;background-size: cover">
+				<div class="text-1">
+					<h1>Welcome</h1>
+					<p> To Contact Us</p>
+				  </div>
+			  </section>
+		
+	<div class="main">
+	<h1 align="center">Get In Touch</h1>
+
+	
+
+	<div class="constraint">
+		<form method="Get" action="#" ng-app="myApp" ng-controller="validateCtrl" 
+		name="myForm" novalidate>
+			<form>
+			<form class="form">
+				<textarea rows="4" cols="50" id="messege" placeholder="Enter Messege" required="required"></textarea><br>
+				<input type="text" name="user" id="name" placeholder="name" ng-model="user" required="required">
+				<input type="email" name="email" id="email" placeholder="Enter Email Address" ng-model="email" required="required" ><br>
+				<span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+						<span ng-show="myForm.user.$error.required">Username is required.</span>
+						</span>				
+				<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid"></span>
+				<span ng-show="myForm.email.$error.required">Email is required.</span>
+				<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+				</span>
+
+				<button type="submitt" id="submit" ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+				myForm.email.$dirty && myForm.email.$invalid"> SUBMIT</button>
+			</form>
+		</form>
+
+		<div class="kanan">
+
+			<div class="kotak">
+			<img src="./img/hotel.png" align="right">
+			<img src="./img/telpon.png" align="right">
+			<img src="./img/mail.png" align="right">
+		</div>
+
+		<div class="text">
+			<p>Jl. Sampaan-Berbah</p>
+			<p>Berbah, Sleman, Yogyakarta</p>
+			<p style="margin-top: 30px">(+62) 85743405622</p>
+			<p style="margin-top: 60px">divisa@support.com</p>
+		</div>
+		</div>
+	</div>
+
+
+
+
+</div>
+
+<div class="txtt">OUR LOCATION</div>
+<div id="map"></div>
+
+<div class="ftr">
+
+
+
+		<footer>
+				<div class="ft-kotak">
+					<div class="ft-kotak1">
+							<div class="gambar"><img src="./pic/divisa logo.png" alt="hotel" width="100%" height="100%"></a></div>
+							<div class="ft-kotak1-text" style="margin-left:50px;font-size: 18px;margin-top: 10px">DIVISA HOTEL</a></div>             
+						 
+					</div>
+					<div class="vll"></div>
+					<div class="ft-kotak2">
+							<div class="home"><a href="about.html">About Us</a></div>
+							<div class="home"><a href="team.html">Team and Condition</a></div>
+							<div class="home"><a href="#">Privacy Policy</a></div>
+						   
+					</div>
+					<div class="ft-kotak2">
+							<div class="home"><a href="#">Help</a></div>
+							<div class="home"><a href="contact.html">Contact</a></div>
+							<div class="home"><a href="#">Our Location</a></div>
+							
+						   
+					</div>
+					<div class="ft-kotak4">
+						   <b><Address>Address:</Address></b>
+						   <p>Jl.Sampaan-Berbah Berbah,Sleman, Yogyakarta</p>
+						   <b>Phone:</b>
+						   <p>(+62)85743405622</p>
+						   <b>Email:</b>
+						   <p>divisa@suport.com</p>
+					</div>
+		
+				</div>
+			</footer>
+</div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -7.808748, lng: 110.442099},
+
+          
+          zoom: 8
+        });
+      }
+    </script>
+    
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwrpY7aHti_RII4Nq00hOYysOxU69Tq_0&callback=initMap"
+    async defer></script>
+
+
+
+<script>
+	// fungtion messege eror
+$("#submit").click(function()
+{	
+                  if ($("#name").val() != '' && $("#email").val() != '' && $("#messege").val() != '') {
+                      confirm("Apakah anda yakin?" );
+                  }
+              });
+</script>
+<script>
+		var app = angular.module('myApp', []);
+		app.controller('validateCtrl', function($scope) {
+			$scope.user = 'Divisa';
+			$scope.email = 'divisa.hotel@gmail.com';
+		});
+		</script>
+
+
+
+<script>
+        
+		$(document).ready(function() {
+	  
+	  $(window).scroll(function() {
+	  
+		var height = $('.first-container').height();
+		var scrollTop = $(window).scrollTop();
+	  
+		if (scrollTop >= height + 400) {
+		  $('.nav-container').addClass('solid-nav');
+		} else {
+		  $('.nav-container').removeClass('solid-nav');
+		}
+	  
+	  });
+	  });
+		
+		</script>
+
+		
+
+</body>
+</html>

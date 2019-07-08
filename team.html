@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="tt.css">
+  <title>TEAM</title>
+  
+  <script src="kelompok/angular.min.js"></script>
+    <script src="fungtion.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./bootstrap-4.3.1-dist/js/aos.js"></script> -->
+    <!-- <script src="/bootstrap-4.3.1-dist/js/popper.min.js"></script> -->
+    
+     <script src="./bootstrap-4.3.1-dist/js/jquery-3.2.1.min.js"></script> 
+</head>
+<body ng-app>
+
+
+    <div class="bg"> 
+            
+        <header ng-include="'header_1.html'">
+          
+        </header>
+
+
+        
+    </div>
+<section class="bgd" style="background-image: url('img/hero_2.jpg');height: 100%;width: 100%;background-size: cover">
+  <div class="text">
+      <h1>Welcome</h1>
+      <p> TEAM</p>
+    </div>
+</section>
+
+  <div class="mainan_1">
+
+   
+
+<div class="leader">LEADERSHIP</div>
+
+<div class="team">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./sank/teams/111.jpg" alt="Avatar" style="width:300px;height:300px;">
+      	<div class="caption">CEO, CO-FOUNDER<br>
+      							<h4>Dandhi Trimakno</h4></div>
+    </div>
+    <div class="flip-card-back">
+      <h1>17.11.1470</h1> 
+      <p>Engineer</p> 
+      <p>Success is not instant</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./sank/teams/2.JPG" alt="Avatar" style="width:300px;height:300px;">
+      	<div class="caption">CTO, CO-FOUNDER<br>
+      							<h4>Livia Safira</h4></div>
+    </div>
+    <div class="flip-card-back">
+      <h1>17.11.1528</h1> 
+      <p>Architect</p> 
+      <p>Out of safe zone</p>
+    </div>
+  </div>
+</div>
+
+	
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./sank/teams/3.jpeg" alt="Avatar" style="width:300px;height:300px;">
+      	<div class="caption">Marketer, CO-FOUNDER<br>
+      							<h4>Sungsang Edi</h4></div>
+    </div>
+    <div class="flip-card-back">
+      <h1>17.11.1469</h1> 
+      <p>Multimedia</p> 
+      <p>1% Skill</p>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<footer ng-include="'footer.html'"></footer> 
+<script>
+        
+    $(document).ready(function() {
+  
+  $(window).scroll(function() {
+  
+    var height = $('.first-container').height();
+    var scrollTop = $(window).scrollTop();
+  
+    if (scrollTop >= height + 40) {
+      $('.nav-container').addClass('solid-nav');
+    } else {
+      $('.nav-container').removeClass('solid-nav');
+    }
+  
+  });
+  });
+    
+    </script>
+  
+</body>
+</html>

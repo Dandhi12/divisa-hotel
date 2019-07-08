@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .mainan {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  footer {
+      width: 100%;
+      height: 300px;
+      position: relative;
+      background-color: #B0702A;
+      margin-top: 1px;
+    
+
+  }
+  .ft-kotak {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    
+  }
+
+  .ft-kotak1 {
+      width: 20%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      
+      margin-left: 2%;
+      margin-top: 5%;
+      color: white;
+     
+  }
+  .ft-kotak2 {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-right: 10%;
+    margin-top: 3%;
+    color: white;
+  
+  }
+  .ft-kotak4 {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+    margin-right: 10%;
+    margin-top: 1%;
+  }
+  
+
+
+  a:link, a:visited {
+      
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration:none;
+    
+    display: inline-block;
+  }
+  .vll {
+    border-left: 3px solid white;
+  height: 150px;
+  margin-right: 10%;
+  margin-left: 1%;
+
+  }
+
+ 

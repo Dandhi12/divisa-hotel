@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online paymen</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='booking_1.css'>
+    <link type="text/css" rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.min.js" />
+    <link type="text/css" rel="stylesheet" href="bootstrap-4.3.1-dist/js/jquery-3.2.1.min.js" />
+    <script src="kelompok/angular.min.js"></script>
+    <script src="fungtion.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/jquery-3.2.1.min.js"></script> 
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+     
+    
+
+</head>
+<body>
+    <div class="container contact-form">
+        <div class="printhis">
+        <form name="myForms" method="GET">
+                <h3 id="finishing" style="text-align: center">Preview</h3>
+                <br>
+                <br>
+               
+                    <div class="col-md-8">
+                            
+                        
+                            <div class="form-group">
+                                <div class="row" style="margin-bottom: 1%">
+                                <h5 style="margin-right: 132px"> Name</h5>
+                                <h5>: {{Iname}}Michael Trimakno</h5>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row" style="margin-bottom: 1%">
+                                        <h5 style="margin-right: 88px"> Number ID</h5>
+                                        <h5>: {{Inumber}}302663388200176489</h5>
+                                            
+                                </div>                    
+                            </div>
+                            <div class="form-group">
+                                    <div class="row" style="margin-bottom: 1%">
+                                        <h5 style="margin-right: 50px">Phone Number</h5>
+                                        <h5>: {{Ipone}}087734900685</h5>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <div class="row" style="margin-bottom: 1%">
+                                        <h5 style="margin-right: 59px"> Number Email </h5>
+                                        <h5>: {{Iemail}}divisa@gmail.com</h5> 
+                                    </div>               
+                            </div>
+                            <div class="form-group">
+                                    <div class="row" style="margin-bottom: 1%">
+                                    <h5 style="margin-right: 30px">Sepecial Request</h5>
+                                    <h5>: {{req}}NONE</h5>
+                                    </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="row" style="margin-bottom: 1%">
+                                <h5 style="margin-right: 104px">Check IN</h5>
+                                <h5>: {{Cin}}2019-07-08T17:00:00.000Z</h5>
+                                </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <div class="row" style="margin-bottom: 1%">
+                            <h5 style="margin-right: 90px">Check Out</h5>
+                            <h5>: {{Cout}}2019-07-09T17:00:00.000Z</h5>
+                            </div>
+                    </div>
+    
+    
+                    <div class="form-group">
+                        <div class="row" style="margin-bottom: 1%">
+                        <h5 style="margin-right: 120px">Rooms</h5>
+                        <h5>: {{Rooms}}1</h5>
+                        </div>
+                </div>
+    
+                <div class="form-group">
+                    <div class="row" style="margin-bottom: 1%">
+                    <h5 style="margin-right: 138px">Adult</h5>
+                    <h5>: {{Adult}}2</h5>
+                    </div>
+            </div>
+    
+            <div class="form-group">
+                <div class="row" style="margin-bottom: 1%">
+                <h5 style="margin-right: 110px">Children</h5>
+                <h5>: {{Children}}1</h5>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                    <div class="row" style="margin-bottom: 1%">
+                    <h5 style="margin-right: 140px">Price</h5>
+                    <h5>: $1000</h5>
+                    </div>
+            </div>
+    
+    
+    
+                    
+                
+                <br>
+                <br>
+    
+                
+                        
+                <div class="form-group">
+                        <div class="row" style="margin-bottom: 1%">
+                            <button class="btnSbmt" onclick="Printin()">PRINT</button>
+                        </div>
+                </div>
+                    </div>
+    
+            </form>
+        </div>
+        </div>
+
+        <script>
+            function Printin() {
+              window.print();
+            }
+            </script>
+    
+</body>
+</html>

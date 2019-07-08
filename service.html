@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SERVICE</title>
+	<link rel="stylesheet" type="text/css" href="s.css">
+	<script src="kelompok/angular.min.js"></script>
+	<script src="./bootstrap-4.3.1-dist/js/jquery-3.2.1.min.js"></script> 
+	
+
+</head>
+<body ng-app>
+<header ng-include="'header_1.html'">
+                  
+				</header>
+				
+				<section class="bgd" style="background-image: url('img/hero_2.jpg');height: 100%;width: 100%;background-size: cover">
+					<div class="text">
+						<h1>Welcome</h1>
+						<p> SERVICE</p>
+					  </div>
+				  </section>
+<h1>SERVICE</h1>
+<div class="mainan">
+	<div class="service">
+		<a target="_blank" href="./sank/services/wifi.png">
+			<img src="./sank/services/wifi.png" alt="wireless" width="600px" height="400px">
+		</a>
+		<div class="caption"><h4><br>FREE WIFI</h4></div>
+		<div class="desc">Divisa Hotel provides free wifi for all customer in Divisa Hotel</div>
+	</div>
+
+	<div class="service">
+		<a target="_blank" href="./sank/services/cctv.png">
+			<img src="./sank/services/cctv.png" alt="secure" width="600" height="400">
+		</a>
+		<div class="caption"><h4>CCTV Security</h4></div>
+		<div class="desc">Divisa hotel completely security with CCTV</div>
+	</div>
+
+	<div class="spaser">
+		<a target="_blank" href="./sank/services/spa.png">
+			<img src="./sank/services/spa.png" alt="sp" width="600" height="400">
+		</a>
+		<div class="caption"><h4>SPA Service</h4></div>
+		<div class="desc">Special service from Divisa hotel is SPA</div>
+	</div>
+</div>
+<div class="ftr">
+
+
+		<footer>
+				<div class="ft-kotak">
+					<div class="ft-kotak1">
+							<div class="gambar"><img src="./pic/divisa logo.png" alt="hotel" width="100%" height="100%"></a></div>
+							<div class="ft-kotak1-text" style="margin-left:50px;font-size: 18px;margin-top: 10px">DIVISA HOTEL</a></div>             
+						 
+					</div>
+					<div class="vll"></div>
+					<div class="ft-kotak2">
+							<div class="home"><a href="about.html">About Us</a></div>
+							<div class="home"><a href="team.html">Team and Condition</a></div>
+							<div class="home"><a href="#">Privacy Policy</a></div>
+						   
+					</div>
+					<div class="ft-kotak2">
+							<div class="home"><a href="#">Help</a></div>
+							<div class="home"><a href="contact.html">Contact</a></div>
+							<div class="home"><a href="#">Our Location</a></div>
+							
+						   
+					</div>
+					<div class="ft-kotak4">
+						   <b><Address>Address:</Address></b>
+						   <p>Jl.Sampaan-Berbah Berbah,Sleman, Yogyakarta</p>
+						   <b>Phone:</b>
+						   <p>(+62)85743405622</p>
+						   <b>Email:</b>
+						   <p>divisa@suport.com</p>
+					</div>
+		
+				</div>
+			</footer>
+</div>
+<script>
+        
+		$(document).ready(function() {
+	  
+	  $(window).scroll(function() {
+	  
+		var height = $('.first-container').height();
+		var scrollTop = $(window).scrollTop();
+	  
+		if (scrollTop >= height + 40) {
+		  $('.nav-container').addClass('solid-nav');
+		} else {
+		  $('.nav-container').removeClass('solid-nav');
+		}
+	  
+	  });
+	  });
+		
+		</script>
+
+</body>
+</html>
